@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Coverage Selection Form — Charity One</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <img src="charity_one_logo.png" alt="Charity One Logo" class="logo" onerror="this.style.display='none'"/>
+    </div>
+  </header>
+
+  <div class="divider-white" aria-hidden="true"></div>
+  <div class="divider-grey" aria-hidden="true"></div>
+
+  <div class="header-bottom">
+    <div class="subtitle"></div>
+  </div>
+
+  <!-- Form Title -->
+    <div class="form-title">
+        <h1 class="title" for="orgName">Coverage Selection</h1>
+    </div>
+
+<main class="container" role="main">
+  <div class="card">
+
+    <!-- Form Intro -->
+        <div>
+          <p class="intro">Coverage descriptions on this form are general and not comprehensive; final coverage, exclusions, and eligibility depend on the organization’s operations and the terms of the issued policy, so please discuss your specific needs with an insurance consultant who specializes in providing insurance solutions for Nonprofit and Social Service organizations.</p>
+        </div>
+
+    <form id="coverageForm">
+
+      <!-- 1. Core Coverages -->
+<div class="section" id="coreSection">
+  <label class="section-title">A. Core Coverages</label>
+
+  <!-- D&O -->
+  <div class="choice-group">
+    <label class="choice-item">
+      <input type="checkbox" class="coverage-toggle" data-target="cov_dno" data-label="Directors and Officers Liability (D&O)">
+      Directors and Officers Liability (D&O)
+    </label>
+  </div>
+  <div id="cov_dno" class="coverage-box hidden">
+    <p>Protects the organization, its board members, and leadership against claims alleging wrongful acts in governance or management.</p>
+  </div>
+
+  <!-- General Liability -->
+  <div class="choice-group">
+    <label class="choice-item">
+      <input type="checkbox" class="coverage-toggle" data-target="cov_gl" data-label="General Liability (GL)">
+      General Liability (GL)
+    </label>
+  </div>
+  <div id="cov_gl" class="coverage-box hidden">
+    <p>Covers third-party bodily injury and property damage related to your operations or activities.</p>
+  </div>
+
+  <!-- Professional Liability -->
+  <div class="choice-group">
+    <label class="choice-item">
+      <input type="checkbox" class="coverage-toggle" data-target="cov_pl" data-label="Professional Liability (PL)">
+      Professional Liability (PL)
+    </label>
+  </div>
+  <div id="cov_pl" class="coverage-box hidden">
+    <p>Covers claims related to professional services such as counseling, casework, program instruction, or other service errors.</p>
+  </div>
+
+  <!-- Workers Compensation -->
+  <div class="choice-group">
+    <label class="choice-item">
+      <input type="checkbox" class="coverage-toggle" data-target="cov_wc" data-label="Workers Compensation">
+      Workers Compensation
+    </label>
+  </div>
+  <div id="cov_wc" class="coverage-box hidden">
+    <p>Provides wage replacement and medical benefits to employees injured while performing job duties.</p>
+  </div>
+
+  <!-- Abuse and Molestation -->
+  <div class="choice-group">
+    <label class="choice-item">
+      <input type="checkbox" class="coverage-toggle" data-target="cov_abuse" data-label="Abuse and Molestation">
+      Abuse and Molestation
+    </label>
+  </div>
+  <div id="cov_abuse" class="coverage-box hidden">
+    <p>Protects against allegations of physical or sexual misconduct by employees, volunteers, or representatives.</p>
+  </div>
+
+  <!-- Auto Liability -->
+  <div class="choice-group">
+    <label class="choice-item">
+      <input type="checkbox" class="coverage-toggle" data-target="cov_auto" data-label="Automobile Liability (Owned & HNOA)">
+      Automobile Liability (Owned & HNOA)
+    </label>
+  </div>
+  <div id="cov_auto" class="coverage-box hidden">
+    <p>Covers owned, leased, rented, or borrowed vehicles — including employee/volunteer vehicles used for work.</p>
+  </div>
+
+  <!-- Property -->
+  <div class="choice-group">
+    <label class="choice-item">
+      <input type="checkbox" class="coverage-toggle" data-target="cov_property" data-label="Property Coverage">
+      Property Coverage
+    </label>
+  </div>
+  <div id="cov_property" class="coverage-box hidden">
+    <p>Protects buildings, equipment, contents, and other physical assets from fire, theft, vandalism, and more.</p>
+  </div>
+
+  <!-- Business Income -->
+  <div class="choice-group">
+    <label class="choice-item">
+      <input type="checkbox" class="coverage-toggle" data-target="cov_income" data-label="Business Income and Extra Expense">
+      Business Income and Extra Expense
+    </label>
+  </div>
+  <div id="cov_income" class="coverage-box hidden">
+    <p>Covers lost income and added expenses if operations stop due to a covered property loss.</p>
+  </div>
+
+  <!-- Crime -->
+  <div class="choice-group">
+    <label class="choice-item">
+      <input type="checkbox" class="coverage-toggle" data-target="cov_crime" data-label="Crime and Employee Dishonesty">
+      Crime and Employee Dishonesty
+    </label>
+  </div>
+  <div id="cov_crime" class="coverage-box hidden">
+    <p>Protects against theft, fraud, embezzlement, and dishonest acts by employees, volunteers, or third parties.</p>
+  </div>
+</div>
+
+<!-- 2. Additional Coverages -->
+<div class="section" id="additionalSection">
+  <label class="section-title">B. Additional Coverages (select if applicable)</label>
+
+  <!-- Volunteer Accident -->
+  <div class="choice-group">
+    <label class="choice-item">
+      <input type="checkbox" class="coverage-toggle" data-target="cov_volacc" data-label="Volunteer Accident">
+      Volunteer Accident
+    </label>
+  </div>
+  <div id="cov_volacc" class="coverage-box hidden">
+    <p>Provides medical benefits for volunteers accidentally injured during covered nonprofit activities.</p>
+  </div>
+
+  <!-- Special Event Liability -->
+  <div class="choice-group">
+    <label class="choice-item">
+      <input type="checkbox" class="coverage-toggle" data-target="cov_event" data-label="Special Event Liability Coverage">
+      Special Event Liability Coverage
+    </label>
+  </div>
+  <div id="cov_event" class="coverage-box hidden">
+    <p>Provides protection for short-term fundraisers, events, or other one-time activities.</p>
+  </div>
+
+  <!-- Cyber -->
+  <div class="choice-group">
+    <label class="choice-item">
+      <input type="checkbox" class="coverage-toggle" data-target="cov_cyber" data-label="Cyber Liability">
+      Cyber Liability
+    </label>
+  </div>
+  <div id="cov_cyber" class="coverage-box hidden">
+    <p>Covers losses from data breaches, cyberattacks, ransomware, or compromised personal information.</p>
+  </div>
+
+  <!-- Umbrella -->
+  <div class="choice-group">
+    <label class="choice-item">
+      <input type="checkbox" class="coverage-toggle" data-target="cov_umbrella" data-label="Umbrella and Excess Liability">
+      Umbrella and Excess Liability
+    </label>
+  </div>
+  <div id="cov_umbrella" class="coverage-box hidden">
+    <p>Provides additional liability limits above primary coverages such as GL or Auto.</p>
+  </div>
+</div>
+
+<!-- 3. Optional Org Name (for consistency with other forms) -->
+<div class="section">
+  <label class="section-title">Organization Name (optional)</label>
+  <input type="text" class="answer" id="orgName" placeholder="Organization name" />
+</div>
+
+<!-- 4. Notes -->
+<div class="section">
+  <label class="section-title">Additional Notes (optional)</label>
+  <textarea class="answer" id="notes" placeholder="Write any notes here..."></textarea>
+</div>
+
+       <!-- Actions -->
+        <div class="actions">
+          <div class="muted-small">Fields marked <span class="required-star">*</span> are required</div>
+          <div style="display:flex;gap:10px;">
+            <button type="button" id="previewBtn" class="btn secondary small">Preview</button>
+            <button id="submitBtn" class="btn" type="submit">Submit</button>
+          </div>
+        </div>
+
+    <div id="statusMsg" class="message hidden"></div>
+  </form>
+
+     </div>
+   <!-- Preview Modal -->
+  <div id="previewModal" class="preview-modal hidden" role="dialog" aria-modal="true" aria-labelledby="previewTitle">
+    <div class="preview-dialog" role="document">
+      <header class="preview-header">
+        <h3 id="previewTitle">Review your answers</h3>
+        <button id="closePreview" class="preview-close" aria-label="Close preview">&times;</button>
+      </header>
+      <div class="preview-body" id="previewBody"></div>
+      <footer class="preview-footer">
+        <button id="editBtn" class="btn secondary">Back / Edit</button>
+        <button id="confirmSubmitBtn" class="btn">Confirm &amp; Submit</button>
+      </footer>
+    </div>
+
+    </form>
+  </div>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
