@@ -45,6 +45,10 @@ function showPreviewModal() {
     const input = sec.querySelector("input.answer[type='text']");
     if (input) value = input.value.trim();
 
+    // textarea notes
+    const textarea = sec.querySelector("textarea.answer");
+    if (textarea) value = textarea.value.trim();
+
     // checkbox-based coverage selection
     const checks = sec.querySelectorAll(".coverage-toggle");
     if (checks.length) {
@@ -91,6 +95,9 @@ function buildPayload() {
 
   const orgName = document.getElementById("orgName");
   if (orgName) payload.orgName = orgName.value.trim();
+
+  const notes = document.getElementById("notes");
+  if (notes) payload.notes = notes.value.trim();
 
   // core coverages
   payload.coreCoverages = Array.from(document.querySelectorAll('#coreSection .coverage-toggle'))
